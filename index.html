@@ -9,6 +9,7 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <link href="css/styles.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -18,17 +19,262 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
-    <div class="container header">
+  <body id="Home" data-spy="scroll" data-target="#bs-example-navbar-collapse-1">
+
+    <!-- Navigation Bar -->
+    <nav class="nav navbar-default navbar-fixed-top">
+  		<div class="container-fluid">
+  			<!-- Brand and toggle get grouped for better mobile display -->
+  			<div class="navbar-header">
+  				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+  					<span class="sr-only">Toggle navigation</span>
+  					<span class="icon-bar"></span>
+  					<span class="icon-bar"></span>
+  					<span class="icon-bar"></span>
+  				</button>
+  				<a class="navbar-brand" href="#">J.Darrell Web Designs</a>
+  			</div>
+
+  			<!-- Collect the nav links, forms, and other content for toggling -->
+  		  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+  			  <ul class="nav nav-tabs navbar-nav navbar-right">
+  				  <li class="active"><a class="page-scroll" href="#home">Home<span class="sr-only">(current)</span></a></li>
+  				  <li><a class="page-scroll" href="#about">About Me</a></li>
+  				  <li><a class="page-scroll" href="#projects">Projects</a></li>
+  				  <li><a class="page-scroll" href="#goals">Goals</a></li>
+  				  <li><a class="page-scroll" href="#contact">Contact Me</a></li>
+  			  </ul>
+    		</div><!-- End Navbar Collapse -->
+    	</div><!-- End Container Fluid -->
+    </nav>
+
+    <!-- Web Body Container -->
+    <div class="container-fluid main-background">
+
+      <div class="container-fluid secondary">
+        <!-- Home Page Banner -->
+        <div id="home" class="jumbotron banner">
+          <div class="container">
+            <h1>Crafting A Future One < element > at a time</h1>
+          </div>
+        </div>
+
+        <!-- About Content Section -->
+        <div id="about">
+          <div class="container about">
+            <div class="row">
+              <div class="col-md-3 border">
+                <h2>About<br>
+                    My<br>
+                    Life</h2>
+              </div>
+              <div class="col-md-8 col-md-offset-1">
+                <div class="row">
+                  <h3>Small Child, Big Dreams</h3>
+                  <p>As a child using my imagination to be able to create things as I wished them to be always amazed me. With such toys as legos, I could bring an image I had in my mind to life. There was always a large amount of satisfaction I felt in seeing my masterpieces exist in the real world. I new some day I'd find something I could apply this logic to when I grew up.</p>
+                </div>
+                <div class="row">
+                  <h3>Into The Now</h3>
+                  <p>Having found myself fall into the tracks of the coding route caught me off guard. Little had I realized there was such an amazing world out there I had been blind to for such a long time. The idea of the sky being the limit at the tips of my fingers and a keyboard is a concept I can't fathom. The near endless possibility of what can be achieved in this realm is a dream I can only continue to chase.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quotes Carousel -->
+        <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+          <div class="container-fluid">
+
+            <!-- Bottom Carousel Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+              <li data-target="#quote-carousel" data-slide-to="1"></li>
+              <li data-target="#quote-carousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Carousel Slides / Quotes -->
+            <div class="carousel-inner">
+
+              <!-- Quote 1 -->
+              <div class="item active">
+                <blockquote>
+                  <div class="row">
+                    <div class="col-md-6 col-md-offset-3 text-center">
+                      <p>It has become appallingly obvious that our technology has exceeded our humanity.</p>
+                      <small>Albert Einstein</small>
+                    </div>
+                  </div>
+                </blockquote>
+              </div>
+              <!-- Quote 2 -->
+              <div class="item">
+                <blockquote>
+                  <div class="row">
+                    <div class="col-md-6 col-md-offset-3 text-center">
+                      <p>The Internet is the most important single development in the history of human communication since the invention of call waiting.</p>
+                      <small>Carl Sagan</small>
+                    </div>
+                  </div>
+                </blockquote>
+              </div>
+              <!-- Quote 3 -->
+              <div class="item">
+                <blockquote>
+                  <div class="row">
+                    <div class="col-md-6 col-md-offset-3 text-center">
+                      <p>If something doesn't seem to be correct, then your code is probably broken. Good luck fixing it!</p>
+                      <small>Myself</small>
+                    </div>
+                  </div>
+                </blockquote>
+              </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#quote-carousel" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#quote-carousel" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Project Showcase -->
+        <div id="projects">
+          <div class="container projects">
+            <div class="row">
+              <h2>Beginning Websites</h2>
+              <p>Check out some of my work in beginner level website design.</p>
+              <div class="col-md-2 col-md-offset-3">
+                  <h3 class="text-center">Portfolio Template</h3>
+                <a href="../../bootcamp-1/portfolio-temp/index.html" class="thumbnail">
+                  <img src="img/portfolio-template.png" class="img-responsive" alt="Portfolio Template">
+                </a>
+              </div>
+              <div class="col-md-2 col-md-offset-2">
+                  <h3 class="text-center">J.D. Webpages</h3>
+                <a href="../../bootcamp-1/personal-website/index.html" class="thumbnail">
+                  <img src="img/jd-webpages.png" class="img-responsive" alt="J.D. Webpages">
+                </a>
+              </div>
+            </div>
+            <div class="row">
+              <h2>Responsive Websites</h2>
+              <p>Check out some of my work with Bootstrap in creating mobile friendly websites.</p>
+              <div class="col-md-2 col-md-offset-1">
+                <h3 class="text-center">Vacation Website</h3>
+                <a href="../day-4/index.html" class="thumbnail">
+                  <img src="img/paradise-trips.png" class="img-responsive" alt="Paradise Trips">
+                </a>
+              </div>
+              <div class="col-md-2 col-md-offset-2">
+                <h3 class="text-center">Pet Store</h3>
+                <a href="../day-6/index.html" class="thumbnail">
+                  <img src="img/pet-store.png" class="img-responsive" alt="Pet Store">
+                </a>
+              </div>
+              <div class="col-md-2 col-md-offset-2">
+                <h3 class="text-center">Restaurante</h3>
+                <a href="../day-7/index.html" class="thumbnail">
+                  <img src="img/restaurante.png" class="img-responsive" alt="Restaurante Web Image">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Goals Section -->
+        <div class="container goals pull-left" id="goals">
+          <div class="row">
+            <div class="col-md-12 goal-title">
+              <h2>Looking Forward...</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 col-md-offset-1">
+              <div class="row">
+                <div class="col-md-12 goal-info">
+                  <h3>Javascript</h3>
+                  <p>Moving ahead from this point, I wish to continue my coding journey on into the realm of Javascript. I want to expand my knowledge and flexibility in coding as far as possible in hopes to open up maximum opportunity for myself in what's to come.</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 goal-info">
+                  <h3>Career</h3>
+                  <p>Following the completion of my final courses in coding with Javascript, my hopes are to find work or internship in the web development field. My long term goals revolve around establishing a life-long career behind the power of coding.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5 col-md-offset-1 goal-photo">
+              <img src="img/career-photo.jpg" class="img-responsvie goal-img center-block" alt="Goal Image">
+            </div>
+          </div>
+        </div>
+
+        <div class="container goals-side pull-right">
+
+        </div>
+
+        <!-- Contact Info -->
+        <div class="container contact-side pull-left">
+
+        </div>
+
+        <div class="container contact pull-right" id="contact">
+          <div class="row">
+            <div class="col-md-12 contact-title">
+              <h2>Contact Me</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-5 col-md-offset-1 contact-links">
+              <div class="row">
+                <div class="col-md-6 col-md-offset-3 contact-sites">
+                  <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 col-md-offset-3 contact-sites">
+                  <a href="#"><i class="fa fa-github" aria-hidden="true"></i>Github</a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 col-md-offset-3 contact-sites">
+                  <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i>Google</a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 col-md-offset-3 contact-sites email">
+                  <a href="mailto:jsdarrell21@gmial.com">jsdarrell21@gmail.com</a>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-md-4 col-md-offset-1 contact-info">
+              <p>If you are interested in having any work done or know anyone who might, feel free to contact me via email or through of the social media sites to the left.</p>
+              <p>I am open to discussion of any ideas or concepts you may have in mind. Creating a sample is possible if you would like to see a piece of your idea come to life.</p>
+            </div>
+          </div>
+
+      </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="container-fluid page-footer">
       <div class="row">
-        <div class="col-sm-4">
+        <div class="col-md-12">
+          <p class="text-center">&copy; Copyright J. Darrell Websites</p>
+        </div>
+      </div>
+    </div>
 
-        </div><!-- End Logo -->
-        <div class="col-sm-4 col-sm-offset-4">
 
-        </div><!-- End Nav -->
-      </div><!-- End Logo/Nav Sections -->
-    </div><!-- End Header -->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
